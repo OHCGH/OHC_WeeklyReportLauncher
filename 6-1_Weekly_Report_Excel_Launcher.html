@@ -3,6 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>6-1 OHC Weekly Report Launcher</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .center-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .message-box {
+        text-align: left;
+        padding: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+    </style>
     <script>
       window.onload = function () {
         const isMobile = /iPhone|Android/i.test(navigator.userAgent);
@@ -19,13 +39,17 @@
     </script>
   </head>
   <body>
-    <p>
-      Excel 파일을 여는 중입니다...<br>
-      알림창에서 'Excel 열기'를 클릭하여 주시고, 열리지 않는 경우 아래의 링크를 클릭하시거나<br>
-      Teams로 접속하시어 파일 우측의 '···' → '열기' → '앱에서 열기' 또는 '데스크탑'을 선택하여 파일을 실행하여 주십시오.<br>
-      파일 링크: 
-      <a href="ms-excel:ofe|u|https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn">
+    <div class="center-container">
+      <div class="message-box">
+        <p>
+           Excel 파일을 여는 중입니다...<br>
+           알림창에서 'Excel 열기'를 클릭하여 주시고, 열리지 않는 경우 아래의 링크를 클릭하시거나<br>
+           Teams로 접속하시어 작성파일 우측의 '···' → '열기' → '앱에서 열기' 또는 '데스크탑'을 선택하여 파일을 실행하여 주십시오.<br>
+             ▷파일 링크: 
+           <a href="ms-excel:ofe|u|https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn">
         Excel 앱에서 열기</a>
-    </p>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
