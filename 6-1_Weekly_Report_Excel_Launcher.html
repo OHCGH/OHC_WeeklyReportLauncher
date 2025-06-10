@@ -2,22 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>OHC Weekly Report Excel Launcher</title>
+    <title>Excel 자동 열기</title>
     <script>
       window.onload = function () {
         const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+
         if (!isMobile) {
+          // 데스크톱 환경에서는 Excel 앱 실행 시도
           window.location.href = "ms-excel:ofe|u|https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn";
-          setTimeout(() => {
-            window.location.href = "https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn";
-          }, 2000);
+          // fallback 제거 → 아무것도 하지 않음
         } else {
+          // 모바일은 웹으로 fallback
           window.location.href = "https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn";
         }
       };
     </script>
   </head>
   <body>
-    <p>Excel 파일을 여는 중입니다... 자동으로 열리지 않으면 <a href="https://ohckr.sharepoint.com/:x:/s/OHC/ESh30OlUPVNLhi9By1FAPYoBanIFntPz3tWBnxBUdTgYQg?e=UBetRn">여기를 클릭하세요</a>.</p>
+    <p>
+      Excel 파일을 여는 중입니다...<br>
+      자동으로 열리지 않으면 Teams로 접속하여 데스크탑으로 실행해 주십시오</a>.
+    </p>
   </body>
 </html>
