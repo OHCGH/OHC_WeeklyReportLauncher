@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>6-3_OHC Weekly Report Launcher</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .center-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .message-box {
+        text-align: left;
+        padding: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-container">
+      <div class="message-box">
+        <p>
+           주간보고 작성 담당자 분들께서는 아래 설명에 맞추어 주간보고 작성을 부탁드립니다.<br>
+           작성분량: 칸당 5줄 이하<br>
+           파일접속방법: 취합본 링크로 접속하여 작업 진행하여 주시되 오류 발생시 예비본 접속<br>
+           ▷취합본 링크:
+           <a href="ms-excel:ofe|u|https://ohckr.sharepoint.com/:x:/s/OHC/EU8hx1nedhBNiAUj-x47kPgBV8mdpnf4jWeV6MHyU4I7Sw?e=ZMfWlH">
+           Excel 앱에서 열기</a>
+           ▷예비본 링크:
+           <a href="ms-excel:ofe|u|https://ohckr.sharepoint.com/:x:/s/OHC/EUg841I-Tc1JjjLgJl9oIFQBAOyCiVce9I1MBE30zVFeaQ?e=H7H1yB">
+           Excel 앱에서 열기</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
